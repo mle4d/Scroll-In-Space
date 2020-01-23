@@ -1,0 +1,34 @@
+body {
+  max-height: 80vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  overscroll-behavior: none;
+}
+.images {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 200px;
+  width: 110%;
+  padding: 100px;
+  -webkit-filter: drop-shadow( 0 0 40px #000000);
+  filter: drop-shadow( 0 0 40px #000000);
+  /* overflow-x: scroll; */
+  opacity: .99;
+}
+
+
+.slide-in {
+  opacity: 0;
+  transition: all 10s;
+}
+
+.slide-in.active {
+  opacity: 1;
+  transform: translateX(0%) scale(1);
+}
+
